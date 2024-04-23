@@ -1,0 +1,1 @@
+Los archivos csv en esta carpeta Son los archivos raw proporcionados para trabajar con ellos por lo que requieren ser procesados

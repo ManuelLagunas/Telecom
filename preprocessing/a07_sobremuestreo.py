@@ -3,7 +3,7 @@
 import os
 import sys
 import pandas as pd
-from sklearn.utils import resample
+from sklearn.utils import resample, shuffle
 
 sys.path.append(os.getcwd())  
 # Esto es para agregar al path la ruta de ejecución actual y poder importar respecto a la ruta del proyecto, desde donde se debe ejecutar el código

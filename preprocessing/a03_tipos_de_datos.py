@@ -18,7 +18,7 @@ phone_df = pd.read_csv("files/datasets/intermediate/a02_phone_columns_name.csv")
 
 #-------- contract_df --------
 contract_df['begin_date'] = pd.to_datetime(contract_df['begin_date'])
-#contract_df['end_date'] = pd.to_datetime(contract_df['end_date'])
+contract_df['end_date'] = contract_df['end_date'].apply(lambda x: 0 if x == 'No' else 1)
 contract_df = pd.get_dummies(contract_df, columns=['type'], prefix='type', drop_first=True)
 contract_df = pd.get_dummies(contract_df, columns=['paperless_billing'], prefix='paperless_billing', drop_first=True)
 contract_df = pd.get_dummies(contract_df, columns=['payment_method'], prefix='payment_method', drop_first=True)
@@ -38,7 +38,7 @@ personal_df['senior_citizen'] = personal_df['senior_citizen'].astype('bool')
 
 #-------- phone_df --------
 phone_df = pd.get_dummies(phone_df, columns=['multiple_lines'], prefix='multiple_lines', drop_first=True)
-phone_df.info()
+# phone_df.info()
 
 # Save data ----------------------------------------
 

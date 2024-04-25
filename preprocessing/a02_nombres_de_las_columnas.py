@@ -28,7 +28,6 @@ phone_df = snake_case_columns(phone_raw)
 
 # Save data ----------------------------------------
 
-# users_behavior.to_csv("files/datasets/intermediate/a01_users_behavior_cleaned.csv", index=False)
 contract_df.to_csv("files/datasets/intermediate/a02_contract_columns_name.csv", index=False)
 internet_df.to_csv("files/datasets/intermediate/a02_internet_columns_name.csv", index=False)
 personal_df.to_csv("files/datasets/intermediate/a02_personal_columns_name.csv", index=False)

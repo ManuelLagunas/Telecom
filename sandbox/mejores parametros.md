@@ -142,3 +142,46 @@ Best AUC-ROC Score: 0.937050994782712
 
 #### LogisticRegression
 
+GridSearchCV(cv=5, estimator=LogisticRegression(),
+             param_grid={'C': [0.001, 0.01, 0.1, 1, 10, 100],
+                         'penalty': ['l1', 'l2'],
+                         'solver': ['liblinear', 'saga']},
+             scoring='roc_auc')
+>>> best_params_lr = grid_search.best_params_
+>>> best_score_lr = grid_search.best_score_
+>>> print("Best Hyperparameters:", best_params_lr)
+Best Hyperparameters: {'C': 0.1, 'penalty': 'l1', 'solver': 'liblinear'}
+>>> print("Best AUC-ROC Score:", best_score_lr)
+Best AUC-ROC Score: 0.833898348946742
+
+
+#### RandomForest
+
+GridSearchCV(cv=5, estimator=RandomForestClassifier(), n_jobs=-1,
+             param_grid={'max_depth': [None, 10, 20, 30],
+                         'min_samples_leaf': [1, 2, 4],
+                         'min_samples_split': [2, 5, 10],
+                         'n_estimators': [10, 20, 30]},
+             scoring=make_scorer(roc_auc_score))
+>>> best_params_rf = grid_search.best_params_
+>>> best_score_rf = grid_search.best_score_
+>>> print("Best Hyperparameters:", best_params_rf)
+Best Hyperparameters: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 30}
+>>> print("Best AUC-ROC Score:", best_score_rf)
+Best AUC-ROC Score: 0.7956834532374101
+
+#### Light
+
+GridSearchCV(cv=5, estimator=LGBMClassifier(), n_jobs=-1,
+             param_grid={'learning_rate': [0.01, 0.1, 0.2],
+                         'max_depth': [None, 10, 20, 30],
+                         'min_child_samples': [20, 30, 40],
+                         'n_estimators': [10, 20, 30],
+                         'num_leaves': [31, 62, 93]},
+             scoring=make_scorer(roc_auc_score))
+>>> best_params_lgbm = grid_search.best_params_
+>>> best_score_lgbm = grid_search.best_score_
+>>> print("Best Hyperparameters:", best_params_lgbm)
+Best Hyperparameters: {'learning_rate': 0.2, 'max_depth': None, 'min_child_samples': 20, 'n_estimators': 30, 'num_leaves': 93}
+>>> print("Best AUC-ROC Score:", best_score_lgbm)
+Best AUC-ROC Score: 0.8287769784172662

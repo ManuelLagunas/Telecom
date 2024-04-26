@@ -74,4 +74,3 @@ joblib.dump(
         )
 
 
-Quiero utilizar GridSearchCV para determinar los mejores hiperparametros para un modelo de logisticRegression con un evaluador AUC_ROC

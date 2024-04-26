@@ -39,7 +39,7 @@ merged_df.fillna(False, inplace=True)
 
 # Correct columns dtype ----------------------------------------
 
-merged_df['begin_date'] = pd.to_datetime(merged_df['begin_date'])
+# merged_df['begin_date'] = pd.to_datetime(merged_df['begin_date'])
 merged_df['end_date'] = pd.to_numeric(merged_df['end_date'], errors='coerce')
 merged_df['total_charges'] = pd.to_numeric(merged_df['total_charges'], errors='coerce')
 

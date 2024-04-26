@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn.metrics import roc_auc_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
@@ -71,3 +72,6 @@ joblib.dump(
         model_rf_2,
         f"files/modeling_output/model_fit/b01_model_rf_2.joblib"
         )
+
+
+Quiero utilizar GridSearchCV para determinar los mejores hiperparametros para un modelo de logisticRegression con un evaluador AUC_ROC

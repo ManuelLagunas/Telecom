@@ -18,6 +18,7 @@ phone_df = pd.read_csv("files/datasets/intermediate/a02_phone_columns_name.csv")
 
 #-------- contract_df --------
 contract_df['begin_date'] = pd.to_datetime(contract_df['begin_date'])
+contract_df['begin_date'] = (contract_df['begin_date'] - contract_df['begin_date'].min()).dt.days
 contract_df['end_date'] = contract_df['end_date'].apply(lambda x: 0 if x == 'No' else 1)
 contract_df = pd.get_dummies(contract_df, columns=['type'], prefix='type', drop_first=True)
 contract_df = pd.get_dummies(contract_df, columns=['paperless_billing'], prefix='paperless_billing', drop_first=True)

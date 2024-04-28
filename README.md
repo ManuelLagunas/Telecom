@@ -42,8 +42,8 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 "preprocessing/README.md"
 "test/README.md"
 "models/README.md"
-"dtasets/input/README.md"
-
+"datasets/input/README.md"
+"files/datasets/intermediate/README.md"
 
 
 ## Conclusión

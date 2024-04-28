@@ -23,59 +23,59 @@ target_train = pd.read_csv("files/datasets/intermediate/a07_target_train_upsampl
 
 # ---------------- Logistic Regression ----------------
 # Define the hyperparameters grid
-param_grid = {
-    'penalty': ['l1', 'l2'],
-    'C': [0.001, 0.01, 0.1, 1, 10, 100],
-    'solver': ['liblinear', 'saga']
-}
+# param_grid = {
+#     'penalty': ['l1', 'l2'],
+#     'C': [0.001, 0.01, 0.1, 1, 10, 100],
+#     'solver': ['liblinear', 'saga']
+# }
 
-# Create the logistic regression model
-logreg = LogisticRegression()
+# # Create the logistic regression model
+# logreg = LogisticRegression()
 
-# Create the GridSearchCV object
-grid_search = GridSearchCV(
-    estimator=logreg, param_grid=param_grid, scoring='roc_auc', cv=5)
+# # Create the GridSearchCV object
+# grid_search = GridSearchCV(
+#     estimator=logreg, param_grid=param_grid, scoring='roc_auc', cv=5)
 
-# Fit the model to the training data
-grid_search.fit(features_train, target_train)
+# # Fit the model to the training data
+# grid_search.fit(features_train, target_train)
 
-# Get the best hyperparameters and the corresponding AUC-ROC score
-best_params_lr = grid_search.best_params_
-best_score_lr = grid_search.best_score_
+# # Get the best hyperparameters and the corresponding AUC-ROC score
+# best_params_lr = grid_search.best_params_
+# best_score_lr = grid_search.best_score_
 
-# Print the best hyperparameters and the corresponding AUC-ROC score
-print("Best Hyperparameters:", best_params)
-print("Best AUC-ROC Score:", best_score)
+# # Print the best hyperparameters and the corresponding AUC-ROC score
+# print("Best Hyperparameters:", best_params)
+# print("Best AUC-ROC Score:", best_score)
 
 # ---------------- Random Forest ----------------
 # Define the hyperparameters grid
-param_grid = {
-    'n_estimators': [10, 20, 30],
-    'max_depth': [None, 10, 20, 30],
-    'min_samples_split': [2, 5, 10],
-    'min_samples_leaf': [1, 2, 4],
-}
+# param_grid = {
+#     'n_estimators': [10, 20, 30],
+#     'max_depth': [None, 10, 20, 30],
+#     'min_samples_split': [2, 5, 10],
+#     'min_samples_leaf': [1, 2, 4],
+# }
 
-# Create the random forest model
-rf = RandomForestClassifier()
+# # Create the random forest model
+# rf = RandomForestClassifier()
 
-# Create scorer
-auc_roc_scorer = make_scorer(roc_auc_score)
+# # Create scorer
+# auc_roc_scorer = make_scorer(roc_auc_score)
 
-# Create the GridSearchCV object
-grid_search = GridSearchCV(
-    estimator=rf, param_grid=param_grid, scoring=auc_roc_scorer, cv=5, n_jobs=-1)
+# # Create the GridSearchCV object
+# grid_search = GridSearchCV(
+#     estimator=rf, param_grid=param_grid, scoring=auc_roc_scorer, cv=5, n_jobs=-1)
 
-# Fit the model to the training data
-grid_search.fit(features_train, target_train)
+# # Fit the model to the training data
+# grid_search.fit(features_train, target_train)
 
-# Get the best hyperparameters and the corresponding AUC-ROC score
-best_params_rf = grid_search.best_params_
-best_score_rf = grid_search.best_score_
+# # Get the best hyperparameters and the corresponding AUC-ROC score
+# best_params_rf = grid_search.best_params_
+# best_score_rf = grid_search.best_score_
 
-# Print the best hyperparameters and the corresponding AUC-ROC score
-print("Best Hyperparameters:", best_params)
-print("Best AUC-ROC Score:", best_score)
+# # Print the best hyperparameters and the corresponding AUC-ROC score
+# print("Best Hyperparameters:", best_params)
+# print("Best AUC-ROC Score:", best_score)
 
 # ---------------- LightGBM ----------------
 # Define the hyperparameters grid

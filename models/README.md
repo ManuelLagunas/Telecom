@@ -1,19 +1,20 @@
 # Models
 
-## Info
+## Información
 
-**NOTA**: Una vez empezado el proyecto borrar la sección de info y completar la descripción.
+### b01_modelos_de_control.py
+Se utiliza una grilla para determinar los mejores hiperparametros  de los modelos LogisticRegression, RandomForest y LigthGBM sin ninguna tecnica que tome en cuenta los desbalanceos de clase
 
-+ En esta carpeta deberan estar los scripts para entrenar el modelo
-+ En este README.md se deberá incluir una breve descripcion de cada scripts
-+ Cada script debe empezar con una letra que represente a una familia de reporte
-    * m00_model_randomforest.R 
-    * m01_model_auc.R contraparte.
-    * t00_model_nn.R 
-    * **Explicación:** "m" representa una familia de modelo "randomforest" que es distinto a la familia "t" que representa el script para crear una red neuronal.
-+ Luego de cada letra, se debe incluir en número empezando con el 00 indicando temporalidad o dependencia.
-    * m00_model_randomforest.R -> "00" representa que se debe empezar con este script para el modelo "m"
-    * m01_model_auc.R -> "01" representa que es segundo script que se debe ejecutar de la familia "m"
-    * t00_model_nn.R  -> "00" representa que se debe empezar con este script para hacer el modelo "t"
+### b02_modelos_con_balanceo.py
+Se utiliza una grilla para determinar los mejores hiperparametros  de los modelos LogisticRegression, RandomForest y LigthGBM con el hiperparametro Class:Balanced
 
-## Descripción
+### b03_modelos_con_sobremuestreo.py
+Se utiliza una grilla para determinar los mejores hiperparametros  de los modelos LogisticRegression, RandomForest y LigthGBM utilizando los datos sobremuestreados ver: **"preprocessing/a07_sobremuestreo.py"**
+
+### b04_modelos_con_submuestreo.py
+Se utiliza una grilla para determinar los mejores hiperparametros  de los modelos LogisticRegression, RandomForest y LigthGBM utilizando los datos submuestreados ver: **"preprocessing/a08_submuestreo.py"**
+
+### b05_evaluacion_del_modelo.py
+Se evalua el modelo de LightGBM con sobremuestreo, con el conjunto de prueba
+
+# Gracias

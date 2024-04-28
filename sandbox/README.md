@@ -1,3 +1,7 @@
-# Sandbox 
+# Bienvebido
 
-Ambiente para realizar pruebas sin modificar el codigo principal
+## Información
+
+### mejores_parametros.md
+
+Lista de los parametros y scoring obtenido al entrenar los modelos ver: **"models/README.md"

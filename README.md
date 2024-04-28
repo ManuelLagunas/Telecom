@@ -45,6 +45,7 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 "datasets/input/README.md"
 "files/datasets/intermediate/README.md"
 "files/modeling_output/figures/AUC-ROC_curve.png"
+"files/modeling_output/model_fit/README.md"
 
 
 ## Conclusión

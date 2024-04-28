@@ -40,7 +40,8 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 ## Archivos de interes
 
 "preprocessing/README.md"
-
+"test/README.md"
+"models/README.md"
 
 ## Conclusión
 

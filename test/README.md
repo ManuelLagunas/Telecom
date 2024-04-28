@@ -1,3 +1,9 @@
 # Test 
 
-Ambiente para realizar pruebas unitarias de código. Puede haber subcarpetas para dividir en distintos tipos de pruebas, por ejemplos, las que corresponden a preproceso, las que están en python, las que son del ETL, o lo que sea necesario.
+## Información
+
+### t01_desvalanceo_de_clases.py
+
+Estudia un posible desbalanceo de clases en el objetivo previo a desarrollar un modelo de machine learning
+
+# Gracias

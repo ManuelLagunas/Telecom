@@ -1,7 +1,6 @@
 # Bienvenido
 
-## Instrucciones
-
+# Instrucciones
 Correr el archivo: `pipeline/p01_pipeline_entrenamiento.py`
 
 ## Introducción

@@ -17,8 +17,8 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 - 5. Crear un conjunto de entrenamiento y otro de prueba
 - 6. Entrenar multiples modelos para seleccionar el mejor, utilizando multiples tecnicas que permitan solucionar el problema del desbalanceo (Si es que existiera)
 - 7. Entrenar el modelo final
-- 7. Probarlo con el conjunto de datos de prueba
-- 8. Presentar los resultados y conclusiones
+- 8. Probarlo con el conjunto de datos de prueba
+- 9. Presentar los resultados y conclusiones
 
 ## Proceso de trabajo
 
@@ -39,18 +39,17 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 
 ## Archivos de interés
 
-`preprocessing/README.md`
-`test/README.md`
-`models/README.md`
-`datasets/input/README.md`
-`files/datasets/intermediate/README.md`
-`files/modeling_output/figures/AUC-ROC_curve.png`
-`files/modeling_output/model_fit/README.md`
-`sandbox/README.md`
-`pipeline/README.md`
+- `preprocessing/README.md`
+- `test/README.md`
+- `models/README.md`
+- `datasets/input/README.md`
+- `files/datasets/intermediate/README.md`
+- `files/modeling_output/figures/AUC-ROC_curve.png`
+- `files/modeling_output/model_fit/README.md`
+- `sandbox/README.md`
+- `pipeline/README.md`
 
 ## Conclusión
 
 El presente trabajo creo un modelo de machine learning para atender la problematica propuesta por el cliente Telecom Examinando y estudiando los datos y creando multiples modelos para seleccionar el mejor para la compañia.
-
 

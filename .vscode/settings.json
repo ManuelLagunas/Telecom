@@ -1,0 +1,27 @@
+{
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e18e4b",
+        "activityBar.background": "#e18e4b",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#c8f6dd",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#e18e4b",
+        "statusBar.background": "#d67323",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#aa5b1c",
+        "statusBarItem.remoteBackground": "#d67323",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#d67323",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#d6732399",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#d67323",
+}
+

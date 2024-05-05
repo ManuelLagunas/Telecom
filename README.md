@@ -53,3 +53,4 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 
 El presente trabajo creo un modelo de machine learning para atender la problematica propuesta por el cliente Telecom Examinando y estudiando los datos y creando multiples modelos para seleccionar el mejor para la compañia.
 
+<!-- TODO Cómo ejecuto el proyecto? Qué pasos sigo? Qué archivo debería ejecutar para que todo se ejecute en el orden correcto y con qué parámetros -->

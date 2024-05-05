@@ -11,7 +11,7 @@
 *.html
 /.project
 .directory
-files
+files # TODO eliminaste la carpeta files, quizás porque no te gustó el nivel extra de profundidad. Si lo vas a dejar así, asegurate de ignorar todo lo que había dentro de la carpeta files, para que no comitees por error datasets, objetos modelos, fotos, etc.
 .idea
 *.aux
 *.log
@@ -23,7 +23,7 @@ files
 *.Rds
 *.code-workspace
 *.pmml
-.vscode
+
 *.jar
 
 # R
@@ -310,4 +310,3 @@ geckodriver.log
 # ms IDE stuff
 *.code-workspace
 .history
-.vscode

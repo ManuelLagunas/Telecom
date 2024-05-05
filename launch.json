@@ -15,3 +15,5 @@
   }
   ]
 }
+
+// TODO Es mejor poner este archivo dentro de .vscode, junto con toda la config de vscode. De hecho no sé si este lo lee

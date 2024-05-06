@@ -1,7 +1,9 @@
 # Bienvenido
 
 # Instrucciones
-Correr el archivo: `pipeline/p01_pipeline_entrenamiento.py`
+<span style="color:blue">
+Correr el archivo: pipeline/p01_pipeline_entrenamiento.py
+</span>
 
 ## Introducción
 

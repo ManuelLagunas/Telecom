@@ -1,9 +1,11 @@
 # Bienvenido
 
 # Instrucciones
-<span style="color:blue">
-Correr el archivo: pipeline/p01_pipeline_entrenamiento.py
-</span>
+
+> * Revisar el archivo requirements.txt (Contiene las librerias necessarias para poder correr el modelo)
+> * Correr el archivo: pipeline/p01_pipeline_entrenamiento.py (No es necesario pasar algun argumento, ya que estos ya se han decidido previamente)
+
+
 
 ## Introducción
 
@@ -53,7 +55,3 @@ El presente trabajo, surge de la necesidad de la compañia Telecom de detectar a
 ## Conclusión
 
 El presente trabajo creo un modelo de machine learning para atender la problematica propuesta por el cliente Telecom Examinando y estudiando los datos y creando multiples modelos para seleccionar el mejor para la compañia.
-
-<!-- TODO Cómo ejecuto el proyecto? Qué pasos sigo? Qué archivo debería ejecutar para que todo se ejecute en el orden correcto y con qué parámetros -->
-
-<!-- TODO Falta el requirements.txt -->

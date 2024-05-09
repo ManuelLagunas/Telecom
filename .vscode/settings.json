@@ -23,5 +23,6 @@
         "titleBar.inactiveForeground": "#15202b99"
     },
     "peacock.color": "#d67323",
+    "editor.minimap.enabled": false,
 }
 
